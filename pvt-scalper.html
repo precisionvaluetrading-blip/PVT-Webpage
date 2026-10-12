@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PVT Scalper — Forex, Stock &amp; Futures Trading Bot</title>
+<meta name="description" content="PVT Scalper is an automated trading bot for Forex, stocks and futures. One payment of $50.">
+<style>
+/* ===== COLORS: change these 7 values to match your PVT site ===== */
+:root{
+  --bg:#050505;       /* page background (black) */
+  --panel:#0e0e10;    /* cards */
+  --line:#222428;     /* borders */
+  --text:#ffffff;     /* main text (white) */
+  --mute:#a1a7b3;     /* secondary text (soft grey) */
+  --accent:#2f6bff;   /* buttons and highlights (blue) */
+  --ink:#ffffff;      /* text on blue buttons (white) */
+}
+/* ================================================================ */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;letter-spacing:.06em}
+.btn{display:inline-block;background:var(--accent);color:var(--ink);font-weight:700;padding:13px 24px;border:0;border-radius:8px;text-decoration:none;cursor:pointer;font-size:1rem}
+.btn.small{padding:8px 16px}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{padding:64px 0 48px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.05;margin:0 0 14px;letter-spacing:-.02em}
+.hero p{max-width:560px;color:var(--mute);font-size:1.15rem}
+.markets{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 28px;padding:0;list-style:none}
+.markets li{border:1px solid var(--accent);border-radius:999px;padding:4px 14px;color:var(--accent)}
+.price{font-size:3rem;font-weight:800;margin:0;color:var(--accent)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);margin:0 0 8px}
+.lead{color:var(--mute);max-width:600px;margin:0 0 28px}
+.media{width:100%;border-radius:12px;background:var(--panel);border:1px solid var(--line);display:block}
+video.media{aspect-ratio:16/9;object-fit:cover}
+.shot{aspect-ratio:4/5;object-fit:cover}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:12px 0 2px}
+.card p{margin:0;color:var(--mute)}
+.buy{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start}
+.buy ul{padding-left:20px;margin:0 0 20px}
+.note{color:var(--mute);font-size:.9rem}
+.note a,details a{color:var(--accent)}
+.wallet{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
+.wallet b{display:block;color:var(--accent)}
+.wallet small{color:var(--mute)}
+.addr{display:flex;gap:8px;align-items:center;margin-top:6px}
+.addr code{flex:1;min-width:0;word-break:break-all;font-size:.85rem}
+.addr button{background:transparent;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:4px 10px;cursor:pointer}
+.empty{color:var(--mute);font-style:italic}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--mute);margin:8px 0 0}
+ol.steps{padding-left:20px}
+ol.steps li{margin-bottom:10px}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mute);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="logo">PVT SCALPER</span>
+    <a class="btn small" href="#buy">Get the bot</a>
+  </header>
+
+  <div class="hero">
+    <ul class="markets"><li>Forex</li><li>Stock</li><li>Future</li></ul>
+    <h1>Automated scalping, <br>one payment.</h1>
+    <p>PVT Scalper places entries and manages stop loss and take profit for you across Forex, stocks and futures.</p>
+    <p class="price">$50</p>
+    <a class="btn" href="#buy">Buy PVT Scalper</a>
+  </div>
+
+  <section id="bot">
+    <h2>Meet the bot</h2>
+    <p class="lead">A short look at PVT Scalper in action.</p>
+    <!-- Your video file: pvt-bot-video.mp4 (same folder as this page) -->
+    <video class="media" src="pvt-bot-video.mp4" controls playsinline preload="metadata"></video>
+  </section>
+
+  <section id="traders">
+    <h2>Traders who actually use it</h2>
+    <p class="lead">Feedback from traders running PVT Scalper.</p>
+    <div class="grid">
+      <!-- Photo files: testimonial-1.jpg, testimonial-2.jpg, testimonial-3.jpg -->
+      <div class="card">
+        <img class="media shot" src="testimonial-1.jpg" alt="Testimonial from Lynette Marie" loading="lazy">
+        <h3>Lynette Marie</h3><p>Market traded · Short quote</p>
+      </div>
+      <div class="card">
+        <img class="media shot" src="testimonial-2.jpg" alt="Testimonial from Chris" loading="lazy">
+        <h3>Chris</h3><p>Market traded · Short quote</p>
+      </div>
+      <div class="card">
+        <img class="media shot" src="testimonial-3.jpg" alt="Testimonial from Roseline Giese" loading="lazy">
+        <h3>Roseline Giese</h3><p>Market traded · Short quote</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="buy">
+    <h2>One purchase. Everything included.</h2>
+    <p class="lead">No monthly subscription.</p>
+    <div class="buy">
+      <div class="card">
+        <p class="price">$50</p>
+        <p class="note">one payment, crypto</p>
+        <ul>
+          <li>Bot files and license key</li>
+          <li>Forex, stock and futures support</li>
+          <li>Installation guide</li>
+          <li>Setup support</li>
+        </ul>
+        <a class="btn" href="#pay">Buy now</a>
+      </div>
+
+      <div class="card" id="pay">
+        <h3 style="margin-top:0">Secure payment</h3>
+        <p class="note">Send exactly $50 in one of the coins below, then send your payment receipt on <a href="https://signal.me/#eu/tcE7LCG58Qk3RJ0Dw7MWAdReIHUYVtyFws149d0AIaGpxsu6aRBJ-7M6ZhMxVfcX">Signal</a> to receive your download.</p>
+
+        <!-- ===== PUT YOUR WALLET ADDRESSES HERE (inside the quotes) ===== -->
+        <div class="wallet">
+          <b>SOL</b><small>Network: Solana</small>
+          <div class="addr"><code data-addr="">&nbsp;</code><button type="button">Copy</button></div>
+        </div>
+        <div class="wallet">
+          <b>USDT</b><small>Network: TRC20 (change if you use another)</small>
+          <div class="addr"><code data-addr="">&nbsp;</code><button type="button">Copy</button></div>
+        </div>
+        <div class="wallet">
+          <b>BTC</b><small>Network: Bitcoin</small>
+          <div class="addr"><code data-addr="">&nbsp;</code><button type="button">Copy</button></div>
+        </div>
+        <!-- ============================================================== -->
+
+        <div class="wallet" style="border-color:var(--accent)">
+          <b>After payment</b>
+          <p class="note" style="margin:6px 0 10px">Send us your payment receipt on our Signal account once your payment is made. We will confirm it and send your files.</p>
+          <a class="btn small" href="https://signal.me/#eu/tcE7LCG58Qk3RJ0Dw7MWAdReIHUYVtyFws149d0AIaGpxsu6aRBJ-7M6ZhMxVfcX">Upload payment receipt here</a>
+        </div>
+
+        <p class="note">Always match the network to the address. Funds sent on the wrong network cannot be recovered.</p>
+      </div>
+    </div>
+    <p class="note">Trading involves risk. Past performance does not guarantee future results. PVT Scalper is trading software, not a guarantee of profit.</p>
+  </section>
+
+  <section id="how">
+    <h2>Get set up in three steps</h2>
+    <ol class="steps">
+      <li><strong>Buy PVT Scalper.</strong> Pay with SOL, USDT or BTC and send your payment receipt on Signal.</li>
+      <li><strong>Install.</strong> Follow the installation guide included in the download.</li>
+      <li><strong>Let it trade.</strong> Apply your settings and keep your platform running while the bot trades.</li>
+    </ol>
+  </section>
+
+  <section id="faq">
+    <h2>Common questions</h2>
+
+    <details>
+      <summary>Which markets does it work on?</summary>
+      <p>PVT Scalper is built for Forex, stocks and futures. Check that your broker offers the instruments you want to trade.</p>
+    </details>
+
+    <details>
+      <summary>What is the minimum account size?</summary>
+      <p>We recommend starting with an amount you can afford to lose. Message us on <a href="https://signal.me/#eu/tcE7LCG58Qk3RJ0Dw7MWAdReIHUYVtyFws149d0AIaGpxsu6aRBJ-7M6ZhMxVfcX">Signal</a> if you want help choosing.</p>
+    </details>
+
+    <details>
+      <summary>Can I get a refund?</summary>
+      <p>Because the bot is a digital product paid in crypto, all sales are final once the files are delivered. If you have a problem with setup, message us on <a href="https://signal.me/#eu/tcE7LCG58Qk3RJ0Dw7MWAdReIHUYVtyFws149d0AIaGpxsu6aRBJ-7M6ZhMxVfcX">Signal</a>.</p>
+    </details>
+
+    <details>
+      <summary>Do I need a VPS?</summary>
+      <p>Your platform has to stay open for the bot to trade. A VPS keeps it running 24/7 without leaving your computer on, but it's optional.</p>
+    </details>
+
+    <details>
+      <summary>How do I get my download after paying?</summary>
+      <p>Send your payment receipt on <a href="https://signal.me/#eu/tcE7LCG58Qk3RJ0Dw7MWAdReIHUYVtyFws149d0AIaGpxsu6aRBJ-7M6ZhMxVfcX">Signal</a> and we will send your files once the payment is confirmed.</p>
+    </details>
+  </section>
+
+  <footer>
+    <strong>PVT SCALPER</strong><br>
+    Payments: SOL · USDT · BTC<br>
+    <a href="https://signal.me/#eu/tcE7LCG58Qk3RJ0Dw7MWAdReIHUYVtyFws149d0AIaGpxsu6aRBJ-7M6ZhMxVfcX" style="color:var(--accent)">Contact us on Signal</a><br>
+    © 2026 PVT Scalper. Trading involves risk.
+  </footer>
+</div>
+
+<script>
+/* Put your addresses inside data-addr="" above.
+   Empty slots show "Address not added yet" and the Copy button is hidden. */
+document.querySelectorAll('.wallet').forEach(function(w){
+  var code = w.querySelector('code'), btn = w.querySelector('button');
+  if(!code || !btn) return;
+  var a = (code.dataset.addr || '').trim();
+  if(!a){ code.textContent = 'Address not added yet'; code.className = 'empty'; btn.style.display = 'none'; return; }
+  code.textContent = a;
+  btn.addEventListener('click', function(){
+    navigator.clipboard.writeText(a).then(function(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy'; }, 1500); });
+  });
+});
+</script>
+</body>
+</html>
